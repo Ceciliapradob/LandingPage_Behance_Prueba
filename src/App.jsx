@@ -8,6 +8,7 @@ const App = () => {
       {/* - He culminado la seccion Features - Componente Features  */}
       {/* - Seccion portfolio casi lista - Faltan algunas modificaciones de pequeños detalles */}
       {/* - Testimonial hecho - Componente Testimonial  */}
+      {/* Seccion Pricing empezada, falta algunos detalles de modificacion - Componente Pricing */}
     </div>
   );
 };

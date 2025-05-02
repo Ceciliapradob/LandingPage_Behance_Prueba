@@ -10,6 +10,7 @@ import PortfolioSection from './componentes/Portfolio/Portfolio.jsx'
 import Resumen from './componentes/Experiencia/Resumen.jsx'
 import Testimonial from './componentes/Testimonial/Testimonial.jsx'
 import Pricing from './componentes/Pricing/Pricing.jsx'
+import Contact from './componentes/Contact/Contact.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -26,6 +27,8 @@ createRoot(document.getElementById('root')).render(
     <Testimonial />
     <Divisor />
     <Pricing />
+    <Divisor />
+    <Contact />
     <Divisor />
   </StrictMode>,
 )

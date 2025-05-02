@@ -78,7 +78,7 @@ const Hero = () => {
         <img
           src={perfil}
           alt="perfil"
-          className="w-[280px] md:w-[320px] lg:w-[370px] h-[350px] md:h-[380px] lg:h-[400px] rounded-[10px] shadow-lg"
+          className="w-[280px] md:w-[320px] lg:w-[370px] h-[350px] md:h-[380px] lg:h-[400px] rounded-[10px] shadow-lg cursor-pointer"
         />
       </section>
     
