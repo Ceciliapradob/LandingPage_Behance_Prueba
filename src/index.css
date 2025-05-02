@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+
+/* todos los h2 */
+h2{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+/* lineas divisoras de secciones */
+.divisor{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom right, #b6c7d22e, #dbe7e752);
+    width: 100%;
+    height: 2px;
+    position: relative;
+    top: 50px;
+}

@@ -13,10 +13,10 @@ const Hero = () => {
   return (
     <main
       id="home"
-      className="flex flex-col lg:flex-row justify-around gap-10 mx-[30px] lg:mx-[150px] mt-[100px] mb-[100px]"
+      className="flex flex-col lg:flex-row justify-center gap-17 mx-[30px] lg:mx-[150px] mt-[100px] mb-[100px]"
     >
       {/* Sección izquierda */}
-      <section className="flex flex-col justify-between w-full lg:w-[45%] gap-10">
+      <section className="flex flex-col justify-center w-full lg:w-[45%] gap-10">
         <div className="presentacion space-y-4">
           <h5 className="text-[12px] text-gray-700 text-[#212122]">
             WELCOME TO MY WORLD
@@ -81,7 +81,9 @@ const Hero = () => {
           className="w-[280px] md:w-[320px] lg:w-[370px] h-[350px] md:h-[380px] lg:h-[400px] rounded-[10px] shadow-lg"
         />
       </section>
+    
     </main>
+    
   );
 };
 
