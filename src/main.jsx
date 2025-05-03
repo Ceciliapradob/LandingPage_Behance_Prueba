@@ -23,7 +23,8 @@ createRoot(document.getElementById('root')).render(
     <Divisor />
     <PortfolioSection />
     <Divisor />
-    {/* <Resumen /> */}
+    <Resumen />
+    <Divisor />
     <Testimonial />
     <Divisor />
     <Pricing />

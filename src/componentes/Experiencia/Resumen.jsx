@@ -1,163 +1,143 @@
-import React from "react";
+import './Resumen.css'
 
-const Resume = () => {
-    // HAY QUE MODIFICAR ESTE COMPONENTE 
+const Resumen = () => {
   return (
-    <section className="flex flex-col items-center justify-center my-12">
-      <h5 className="text-gray-500">7+ YEARS OF EXPERIENCE</h5>
-      <h2 className="text-2xl font-bold mb-8">My Resume</h2>
+  
+    <section id="resume"  className=" flex flex-col items-center my-25 mx-50">
+      <h5 className="text-[#FF014F]">7+ YEARS OF EXPERIENCE</h5>
+      <h2 className="text-3xl font-bold mt-2 mb-6">My Resume</h2>
 
       {/* Cinta de botones */}
-      <div className="flex justify-center items-center space-x-4 w-full mb-8">
-        <a
-          href="#"
-          className="w-1/4 h-16 text-center font-bold bg-gradient-to-br from-white via-gray-100 to-white rounded-xl shadow-xl"
-        >
+      <div className="flex w-full h-15 rounded-lg shadow-[0_0_10px_5px_rgba(255,255,255,0.538),2px_5px_10px_-5px_rgba(14,14,15,0.782)] bg-gradient-to-br from-[rgba(0,0,0,0.041)] to-white justify-center items-center mb-5">
+        <a href="#" className="w-1/4 h-15 flex justify-center items-center text-xs font-bold text-[#FF014F] shadow-[0_0_10px_5px_rgba(255,255,255,0.538),2px_5px_10px_-5px_rgba(14,14,15,0.782)] bg-gradient-to-br from-[rgba(0,0,0,0.041)] to-white rounded-lg">
           Education
         </a>
-        <a
-          href="#"
-          className="w-1/4 h-16 text-center font-bold bg-gradient-to-br from-white via-gray-100 to-white rounded-xl shadow-xl"
-        >
+        <a href="#" className="w-1/4 h-15 flex justify-center items-center text-xs font-bold text-[#212122]">
           Professional Skills
         </a>
-        <a
-          href="#"
-          className="w-1/4 h-16 text-center font-bold bg-gradient-to-br from-white via-gray-100 to-white rounded-xl shadow-xl"
-        >
+        <a href="#" className="w-1/4 h-15 flex justify-center items-center text-xs font-bold text-[#212122]">
           Experience
         </a>
-        <a
-          href="#"
-          className="w-1/4 h-16 text-center font-bold bg-gradient-to-br from-white via-gray-100 to-white rounded-xl shadow-xl"
-        >
+        <a href="#" className="w-1/4 h-15 flex justify-center items-center text-xs font-bold text-[#212122] rounded-r-lg">
           Interview
         </a>
       </div>
 
       {/* Contenedor de secciones Education y Experience */}
-      <div className="flex gap-12">
+      <div className="flex gap-11">
 
         {/* Contenedor izquierdo: Education */}
-        <div className="relative flex flex-col">
-          <div className="absolute top-24 left-24 w-[4px] h-[690px] bg-gray-300">
-            <div className="absolute top-8 w-[25px] h-[4px] bg-gray-300"></div>
-            <div className="absolute top-[150px] w-[25px] h-[4px] bg-gray-300"></div>
-            <div className="absolute top-[290px] w-[25px] h-[4px] bg-gray-300"></div>
-            <div className="absolute top-24 left-[calc(100%-15px)] w-[10px] h-[10px] bg-gray-200 border-2 border-gray-400 rounded-full"></div>
-            <div className="absolute top-[150px] left-[calc(100%-15px)] w-[10px] h-[10px] bg-gray-200 border-2 border-gray-400 rounded-full"></div>
-            <div className="absolute top-[290px] left-[calc(100%-15px)] w-[10px] h-[10px] bg-gray-200 border-2 border-gray-400 rounded-full"></div>
-          </div>
-          <div className="mb-6">
-            <h5 className="text-gray-500">2007-2010</h5>
-            <h2 className="text-xl font-semibold">Education Quality</h2>
+        <div className="flex flex-col relative">
+          {/* Encabezado Education */}
+          <div>
+            <h5 className="text-[#FF014F]">2007-2010</h5>
+            <h2 className="text-2xl mb-0">Education Quality</h2>
           </div>
 
           {/* Tarjetas Education */}
-          <div className="card-resume mb-6">
-            <div className="card-r-encabezado">
-              <div className="card-titulo">
-                <h3>Personal portfolio April Fools</h3>
-                <h6>University of DVI (1997-2001)</h6>
+          {/* BOX 1 */}
+          <div className="flex flex-col p-7 mt-7 w-100 h-47 border-none rounded-lg shadow-[0_0_10px_5px_rgba(255,255,255,0.538),2px_5px_10px_-5px_rgba(14,14,15,0.782)] bg-gradient-to-br from-[rgba(0,0,0,0.041)] to-white relative ">
+            <div className="flex h-15 items-center justify-between bg-transparent mb-7">
+              <div className="flex flex-col justify-between gap-2 bg-transparent">
+                <h3 className="font-semibold">Personal portfolio April Fools</h3>
+                <h6 className="font-medium bg-transparent">University of DVI (1997-2001)</h6>
               </div>
-              <div className="point">
-                <span>4.30/5</span>
-              </div>
-            </div>
-            <div className="card-r-parrafo">
-              <p>The education should be very interactive. Ut tincidunt est ac dolor aliquam sodales.</p>
-            </div>
-          </div>
-
-          <div className="card-resume mb-6">
-            <div className="card-r-encabezado">
-              <div className="card-titulo">
-                <h3>Examples of Personal Portfolio</h3>
-                <h6>College os Studies (200-2002)</h6>
-              </div>
-              <div className="point">
-                <span>4.50/5</span>
+              <div className="text-center w-14 h-7 bg-white rounded shadow-[8px_8px_10px_-8px_grey]">
+                <span className="bg-white text-[#FF014F] text-xs font-semibold">4.30/5</span>
               </div>
             </div>
-            <div className="card-r-parrafo">
-              <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales.</p>
+            <div className="bg-transparent text-xs">
+              <p>The eduaction should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, labortis mauris hendrerit ante.</p>
             </div>
           </div>
 
-          <div className="card-resume mb-6">
-            <div className="card-r-encabezado">
-              <div className="card-titulo">
-                <h3>Tips for Personal Portfolio</h3>
-                <h6>University of Studies (1997-2001)</h6>
+          {/* BOX 2 */}
+          <div className="flex flex-col p-7 mt-7 w-100 h-47 border-none rounded-lg shadow-[0_0_10px_5px_rgba(255,255,255,0.538),2px_5px_10px_-5px_rgba(14,14,15,0.782)] bg-gradient-to-br from-[rgba(0,0,0,0.041)] to-white relative">
+            <div className="flex h-15 items-center justify-between bg-transparent mb-7">
+              <div className="flex flex-col justify-between gap-2 bg-transparent">
+                <h3 className="font-semibold">Examples of Personal Porfolio</h3>
+                <h6 className="font-medium bg-transparent">College os Studies (200-2002)</h6>
               </div>
-              <div className="point">
-                <span>4.80/5</span>
+              <div className="text-center w-14 h-7 bg-white rounded shadow-[8px_8px_10px_-8px_grey]">
+                <span className="bg-white text-[#FF014F] text-xs font-semibold">4.50/5</span>
               </div>
             </div>
-            <div className="card-r-parrafo">
-              <p>If you are going to use a passage. Ut tincidunt est ac dolor aliquam sodales.</p>
+            <div className="bg-transparent text-xs">
+              <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, labortis mauris hendrerit ante.</p>
+            </div>
+          </div>
+
+          {/* BOX 3 */}
+          <div className="flex flex-col p-7 mt-7 w-100 h-47 border-none rounded-lg shadow-[0_0_10px_5px_rgba(255,255,255,0.538),2px_5px_10px_-5px_rgba(14,14,15,0.782)] bg-gradient-to-br from-[rgba(0,0,0,0.041)] to-white relative ">
+            <div className="flex h-15 items-center justify-between bg-transparent mb-7">
+              <div className="flex flex-col justify-between gap-2 bg-transparent">
+                <h3 className="font-semibold">Tips for Personal Portfolio</h3>
+                <h6 className="font-medium bg-transparent">University of Studies (1997-2001)</h6>
+              </div>
+              <div className="text-center w-14 h-7 bg-white rounded shadow-[8px_8px_10px_-8px_grey]">
+                <span className="bg-white text-[#FF014F] text-xs font-semibold">4.80/5</span>
+              </div>
+            </div>
+            <div className="bg-transparent text-xs">
+              <p>If you are going to use a passage. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, labortis mauris hendrerit ante.</p>
             </div>
           </div>
         </div>
 
-        {/* Contenedor derecho: Job Experience */}
-        <div className="relative flex flex-col">
-          <div className="absolute top-24 left-24 w-[4px] h-[690px] bg-gray-300">
-            <div className="absolute top-8 w-[25px] h-[4px] bg-gray-300"></div>
-            <div className="absolute top-[150px] w-[25px] h-[4px] bg-gray-300"></div>
-            <div className="absolute top-[290px] w-[25px] h-[4px] bg-gray-300"></div>
-            <div className="absolute top-24 left-[calc(100%-15px)] w-[10px] h-[10px] bg-gray-200 border-2 border-gray-400 rounded-full"></div>
-            <div className="absolute top-[150px] left-[calc(100%-15px)] w-[10px] h-[10px] bg-gray-200 border-2 border-gray-400 rounded-full"></div>
-            <div className="absolute top-[290px] left-[calc(100%-15px)] w-[10px] h-[10px] bg-gray-200 border-2 border-gray-400 rounded-full"></div>
-          </div>
-          <div className="mb-6">
-            <h5 className="text-gray-500">2007-2010</h5>
-            <h2 className="text-xl font-semibold">Job Experience</h2>
+        {/* Contenedor derecho: Job experience */}
+        <div className="flex flex-col relative">
+          {/* Encabezado Experience */}
+          <div>
+            <h5 className="text-[#FF014F]">2007-2010</h5>
+            <h2 className="text-2xl mb-0">Job Experience</h2>
           </div>
 
           {/* Tarjetas Experience */}
-          <div className="card-resume mb-6">
-            <div className="card-r-encabezado">
-              <div className="card-titulo">
-                <h3>Diploma in Web Development</h3>
-                <h6>BSE in CSE (2004-2008)</h6>
+          {/* BOX 4 */}
+          <div className="flex flex-col p-7 mt-7 w-100 h-47 border-none rounded-lg shadow-[0_0_10px_5px_rgba(255,255,255,0.538),2px_5px_10px_-5px_rgba(14,14,15,0.782)] bg-gradient-to-br from-[rgba(0,0,0,0.041)] to-white relative ">
+            <div className="flex h-15 items-center justify-between bg-transparent mb-7">
+              <div className="flex flex-col justify-between gap-2 bg-transparent">
+                <h3 className="font-semibold">Diploma in Web Development</h3>
+                <h6 className="font-medium bg-transparent">BSE in CSE (2004-2008)</h6>
               </div>
-              <div className="point">
-                <span>4.70/5</span>
-              </div>
-            </div>
-            <div className="card-r-parrafo">
-              <p>Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales.</p>
-            </div>
-          </div>
-
-          <div className="card-resume mb-6">
-            <div className="card-r-encabezado">
-              <div className="card-titulo">
-                <h3>The Personal Portfolio Mystery</h3>
-                <h6>Job At Rainbow-Themes (2008-2016)</h6>
-              </div>
-              <div className="point">
-                <span>4.95/5</span>
+              <div className="text-center w-14 h-7 bg-white rounded shadow-[8px_8px_10px_-8px_grey]">
+                <span className="bg-white text-[#FF014F] text-xs font-semibold">4.70/5</span>
               </div>
             </div>
-            <div className="card-r-parrafo">
-              <p>Generate Lorem ipsum which looks. Ut tincidunt est ac dolor aliquam sodales.</p>
+            <div className="bg-transparent text-xs">
+              <p>Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoret sem in lobortis mauris hendrerit ante.</p>
             </div>
           </div>
 
-          <div className="card-resume mb-6">
-            <div className="card-r-encabezado">
-              <div className="card-titulo">
-                <h3>Diploma in Computer Science</h3>
-                <h6>Work at Plugin Development (2016-2023)</h6>
+          {/* BOX 5 */}
+          <div className="flex flex-col p-7 mt-7 w-100 h-47 border-none rounded-lg shadow-[0_0_10px_5px_rgba(255,255,255,0.538),2px_5px_10px_-5px_rgba(14,14,15,0.782)] bg-gradient-to-br from-[rgba(0,0,0,0.041)] to-white relative ">
+            <div className="flex h-15 items-center justify-between bg-transparent mb-7">
+              <div className="flex flex-col justify-between gap-2 bg-transparent">
+                <h3 className="font-semibold">The Personal Portfolio Mystery</h3>
+                <h6 className="font-medium bg-transparent">Job At Rainbow-Themes (2008-2016)</h6>
               </div>
-              <div className="point">
-                <span>5/5</span>
+              <div className="text-center w-14 h-7 bg-white rounded shadow-[8px_8px_10px_-8px_grey]">
+                <span className="bg-white text-[#FF014F] text-xs font-semibold">4.95/5</span>
               </div>
             </div>
-            <div className="card-r-parrafo">
-              <p>The best diploma I have! Ut tincidunt est ac dolor aliquam sodales.</p>
+            <div className="bg-transparent text-xs">
+              <p>Generate Lorem impsum which looks. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, labortis mauris hendrerit ante.</p>
+            </div>
+          </div>
+
+          {/* BOX 6 */}
+          <div className="flex flex-col p-7 mt-7 w-100 h-47 border-none rounded-lg shadow-[0_0_10px_5px_rgba(255,255,255,0.538),2px_5px_10px_-5px_rgba(14,14,15,0.782)] bg-gradient-to-br from-[rgba(0,0,0,0.041)] to-white relative ">
+            <div className="flex h-15 items-center justify-between bg-transparent mb-7">
+              <div className="flex flex-col justify-between gap-2 bg-transparent">
+                <h3 className="font-semibold">Diploma in Computer Science</h3>
+                <h6 className="font-medium bg-transparent">Work at Plugin Development (2016-2020)</h6>
+              </div>
+              <div className="text-center w-14 h-7 bg-white rounded shadow-[8px_8px_10px_-8px_grey]">
+                <span className="bg-white text-[#FF014F] text-xs font-semibold">5.00/5</span>
+              </div>
+            </div>
+            <div className="bg-transparent text-xs">
+              <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, labortis mauris hendrerit ante.</p>
             </div>
           </div>
         </div>
@@ -166,4 +146,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default Resumen;
