@@ -3,9 +3,9 @@
 ![presentacion](https://github.com/user-attachments/assets/3d7b6a72-9dd7-431d-a4ee-3b96fb8febb3)
 
 
-Esta es una **landing page moderna y responsiva** desarrollada con **React** y **Tailwind CSS**, inspirada en el siguiente diseño de Behance https://www.behance.net/gallery/186223239/Portfolio-Website-Landing-Page?tracking_source=search_projects&l=75. El sitio simula una página de portafolio profesional con secciones visuales, filtros dinámicos y un formulario de contacto totalmente funcional (solo frontend).
+Esta es una **landing page moderna y responsiva** desarrollada con **React** y **Tailwind CSS**, inspirada en el siguiente diseño de Behance https://www.behance.net/gallery/186223239/Portfolio-Website-Landing-Page?tracking_source=search_projects&l=75. El sitio simula una página de tipo Landing  profesional con secciones visuales, filtros dinámicos y un formulario de contacto totalmente funcional (solo frontend).
 
-> 💡 Ideal para mostrar proyectos, habilidades, y facilitar el contacto con clientes o reclutadores.
+> 💡 Ideal para mostrar proyectos, habilidades, y facilitar el contacto con clientes..
 
 ---
 
