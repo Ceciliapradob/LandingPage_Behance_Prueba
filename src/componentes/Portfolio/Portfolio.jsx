@@ -51,14 +51,14 @@ const PortfolioSection = () => {
       <p className="text-pink-500 uppercase text-sm tracking-widest font-semibold mb-2">
         Visit my portfolio and keep your feedback
       </p>
-      <h2 className="text-4xl font-bold text-gray-800 mb-12">My Portfolio</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <h2 className="text-gray-800 mb-12 text-[#212122] text-4xl font-extrabold">My Portfolio</h2>
+      <div className="cursor-pointer grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {portfolioItems.map((item, index) => (
           <div
             key={index}
             className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow px-6 pt-4 pb-7"
           >
-            <div className="overflow-hidden rounded-xl h-56 mb-4 p-2">
+            <div className="cursor-pointer overflow-hidden rounded-xl h-56 mb-4 p-2">
               <img
                 src={item.image}
                 alt={item.title}

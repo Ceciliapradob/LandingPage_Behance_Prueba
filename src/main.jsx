@@ -37,7 +37,5 @@ createRoot(document.getElementById('root')).render(
     <BlogCards />
     <Divisor />
     <Contact />
-    <Divisor />
-    <Footer />
   </StrictMode>,
 )

@@ -9,11 +9,11 @@ const Contact = () => {
       id="contact"
     >
       <h5 className="text-[#FF014F]">CONTACT</h5>
-      <h2>Contact With Me</h2>
+      <h2 className="text-[#212122] text-4xl font-extrabold">Contact With Me</h2>
 
       <div className="flex justify-center gap-10 ml-10">
         {/* ------------------------------------- Columna izquierda ---------------------------------------- */}
-        <div className="flex flex-col justify-between w-[35%] h-[500px] rounded-[10px] p-5 shadow-[0_0_10px_5px_rgba(255,255,255,0.538),2px_5px_10px_-5px_rgba(14,14,15,0.782)] bg-gradient-to-br from-[rgba(0,0,0,0.041)] to-white">
+        <div className="cursor-pointer flex flex-col justify-between w-[35%] h-[500px] rounded-[10px] p-5 shadow-[0_0_10px_5px_rgba(255,255,255,0.538),2px_5px_10px_-5px_rgba(14,14,15,0.782)] bg-gradient-to-br from-[rgba(0,0,0,0.041)] to-white">
           <img
             src={manos}
             alt="manos"

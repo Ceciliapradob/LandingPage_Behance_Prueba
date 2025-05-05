@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState, useRef } from "react";
 import perfil from "../../assets/perfil.jpg";
 import {
   FaFacebookF,
@@ -10,6 +11,45 @@ import {
 } from "react-icons/fa";
 
 const Hero = () => {
+
+  const TypingEffect = ({ text, speed = 100 }) => {
+    const [displayedText, setDisplayedText] = useState("");
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [showCursor, setShowCursor] = useState(true);
+
+    // Efecto para el cursor parpadeante
+    useEffect(() => {
+      if (currentIndex >= text.length) {
+        setShowCursor(false);
+        return;
+      }
+
+      const cursorInterval = setInterval(() => {
+        setShowCursor((prev) => !prev);
+      }, 500);
+
+      return () => clearInterval(cursorInterval);
+    }, [currentIndex, text.length]);
+
+    // Efecto para el typing
+    useEffect(() => {
+      if (currentIndex < text.length) {
+        const timeout = setTimeout(() => {
+          setDisplayedText((prev) => prev + text[currentIndex]);
+          setCurrentIndex((prev) => prev + 1);
+        }, speed);
+
+        return () => clearTimeout(timeout);
+      }
+    }, [currentIndex, text, speed]);
+
+    return (
+      <h2 className="text-2xl font-bold">
+        {displayedText}
+        {showCursor && <span className="ml-1 animate-pulse">|</span>}
+      </h2>
+    );
+  };
   return (
     <main
       id="home"
@@ -24,10 +64,15 @@ const Hero = () => {
           <h1 className="text-[32px] md:text-[45px] font-bold text-[#212122]">
             Hi, I'm <span className="text-[#FF014F]">Sheroz Mir</span>
           </h1>
+
           <h2 className="text-[24px] md:text-[35px] font-semibold text-[#212122] mb-[20px]">
-            <span className="text-[#FF014F]">a</span> UX UI Designer
-            <span className="font-light">|</span>
+            <TypingEffect
+              text="a UX UI Designer"
+              speed={50}
+            />{" "}
           </h2>
+
+          {/*------------------------------------ parrafo del hero --------------------------------- */}
           <p className="text-[14px] text-gray-700 leading-[25px] text-[#212122]">
             I use animation as a third dimension by which to simplify experience
             and <br />
@@ -81,9 +126,7 @@ const Hero = () => {
           className="w-[280px] md:w-[320px] lg:w-[370px] h-[350px] md:h-[380px] lg:h-[400px] rounded-[10px] shadow-lg cursor-pointer"
         />
       </section>
-    
     </main>
-    
   );
 };
 

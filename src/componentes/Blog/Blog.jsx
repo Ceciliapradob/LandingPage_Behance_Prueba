@@ -32,8 +32,8 @@ export default function BlogCards() {
   return (
     <section className="py-16 px-4 text-center">
       <p className="text-pink-600 font-semibold text-sm uppercase">Visit my blog and keep your feedback</p>
-      <h2 className="text-4xl font-bold mt-2 mb-10">My Blog</h2>
-      <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto px-10">
+      <h2 className="text-[#212122] text-4xl font-extrabold mt-2 mb-10">My Blog</h2>
+      <div className="cursor-pointer grid gap-7 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto px-10">
         {blogPosts.map((post) => (
           <div
             key={post.id}
