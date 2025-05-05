@@ -13,7 +13,7 @@ import Pricing from './componentes/Pricing/Pricing.jsx'
 import Contact from './componentes/Contact/Contact.jsx'
 import Client from './componentes/Clients/Client.jsx'
 import BlogCards from './componentes/Blog/Blog.jsx'
-import Footer from './componentes/Footer/Footer.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
